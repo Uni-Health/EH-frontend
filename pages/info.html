@@ -1,0 +1,90 @@
+<!-- Taken from themekit -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Theme Kit</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Custom built theme - This already includes Bootstrap 4 -->
+    <link rel="stylesheet" href="../less/main.less" />
+    <link rel="stylesheet" href="../less/info.less">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="../img/fulllogo.png" height="50" />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <img src="../img/user.png" alt="User Icon" class="img-circle" />
+          <h1>Alex Beck</h1>
+          <br />
+          <br />
+          <a class="btn btn-primary btn-lg">Add Quick Log</a>
+          <br />
+          <br />
+          <a class="btn btn-primary btn-lg">Add Detailed Log</a>
+          <br>
+          <br>
+        </div>
+        <div class="col-md-8">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="active">
+              <a href="#personal" role="tab" data-toggle="tab">
+                Personal Data
+              </a>
+            </li>
+            <li>
+              <a href="#biometric" role="tab" data-toggle="tab">
+                Biometric Data
+              </a>
+            </li>
+            <li>
+              <a href="#illness" role="tab" data-toggle="tab">
+                Illnesses
+              </a>
+            </li>
+            <li>
+              <a href="#medication" role="tab" data-toggle="tab">
+                Medications
+              </a>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane fade active in" id="personal">
+              Personal Data
+            </div>
+            <div class="tab-pane fade" id="biometric">
+              Biometric Data
+            </div>
+            <div class="tab-pane fade" id="illness">
+              Illnesses
+            </div>
+            <div class="tab-pane fade" id="medication">
+              Medications
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../js/test.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>
