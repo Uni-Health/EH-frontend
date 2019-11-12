@@ -1,16 +1,9 @@
-const errors = {
-  400: ['ALREADY_EXISTS', 'An user has existed.']
-};
-
 export class ErrorHandler {
   static async handle(info) {
-    if (info['status'] in errors) {
+    if (info['status'] == 200) {
       return;
-    }
-
-    if (info['status'] in errors) {
-      // handle errors
-      throw Error(errors[info['status']][1]);
+    } else {
+      throw Error(info['msg']);
     }
   }
 }

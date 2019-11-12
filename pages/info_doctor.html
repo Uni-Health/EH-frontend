@@ -15,6 +15,48 @@
     <link rel="stylesheet" href="../less/info.less" />
   </head>
   <body>
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+    >
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-inline" action="">
+              <div class="form-group">
+                <label class="sr-only" for="inputPhone">Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="inputPhone"
+                  placeholder="Phone Number"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Retrieve</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <nav class="navbar navbar-default navbar-inverse">
       <div class="container">
         <div class="navbar-header">
@@ -27,14 +69,23 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 text-center">
-          <img src="../img/user.png" alt="User Icon" class="img-circle" />
-          <h1>Alex Beck</h1>
-          <h5 class="text-muted">Patient</h5>
+          <img src="../img/doctor.png" alt="Doctor Icon" class="img-circle" />
+          <h1>Conan Desmond</h1>
+          <h5 class="text-muted">Doctor</h5>
+          <h5>Old York Hospital</h5>
+          <h5>Cardiology</h5>
+          <h5>Senior Doctor</h5>
+          <h5>Age 35</h5>
           <br />
-          <a class="btn btn-primary btn-lg">Add Quick Log</a>
+          <h2>Currently Viewing</h2>
+          <h5>Nobody</h5>
           <br />
-          <br />
-          <a class="btn btn-primary btn-lg">Add Detailed Log</a>
+          <a
+            class="btn btn-primary btn-lg"
+            data-toggle="modal"
+            data-target="#myModal"
+            >Retrieve Patient Data</a
+          >
           <br />
           <br />
         </div>
