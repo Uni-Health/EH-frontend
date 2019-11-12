@@ -19,12 +19,16 @@
   },
   "homepage": "https://github.com/Uni-Health/EH-frontend#readme",
   "dependencies": {
+    "@babel/polyfill": "^7.6.0",
     "bootstrap": "^3.4.1",
     "jquery": "^3.4.1",
     "parcel": "^1.12.4",
     "popper.js": "^1.16.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
     "autoprefixer": "^9.7.1",
     "less": "^3.10.3"
   }
